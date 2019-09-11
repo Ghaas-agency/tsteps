@@ -12,6 +12,40 @@
     max-width: 450px;
   }
 
+  &-rows {
+    & > div:first-child {
+      img {
+        max-width: 90px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        margin-bottom: 35px;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+
+      & > div:last-child {
+        margin-top: 60px;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      & > div:last-child {
+        & > .row {
+          flex-wrap: wrap;
+
+          & > div:last-child {
+            min-width: 100%;
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+  }
+
   &-menu,
   &-social {
     list-style: none;
@@ -20,7 +54,7 @@
     margin-top: 25px;
 
     li {
-      margin: 10px 0;
+      margin: 12px 0;
     }
   }
 

@@ -23,7 +23,7 @@ html(lang="en")
     //- meta(name='twitter:creator', content='@dist_sys')
     meta(name='twitter:image:src', content='assets/img/tsteps-meta.jpg')
     // Open Graph general (Facebook, Pinterest & Google+)
-    meta(name='url', property='og:url', content='https://dsconf.in')
+    //- meta(name='url', property='og:url', content='https://dsconf.in')
     meta(name='site_name', property='og:site_name', content='T_Steps')
     meta(name='title', property='og:title', content="T_Steps | The Talent Engagement Ecosystem")
     meta(name='type', property='og:type', content='website')
@@ -33,20 +33,20 @@ html(lang="en")
     nav.nav
       .container
         .row.align-items-center
-          .flex-1
-            button.button-unstyled(type="button", onclick="toggleMobileMenu();")
-              img.nav-toggle-icon(src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/md-menu.svg", alt="menu icon")
+          //- .flex-1
+          //-   button.button-unstyled(type="button", onclick="toggleMobileMenu();")
+          //-     img.nav-toggle-icon(src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/md-menu.svg", alt="menu icon")
           .flex-1
             a(href="./")
               img.nav-logo(src="assets/img/tsteps-logo.svg", alt="t_steps logo")
-          .flex-1.right
-            ul.nav-menu
-              li
-                a(href="#!") About Us
-              li
-                a(href="#!") Blog
-          .flex-1.right
-            a.button(href="#!") Contact Us
+          //- .flex-1.right
+          //-   ul.nav-menu
+          //-     li
+          //-       a(href="#!") About Us
+          //-     li
+          //-       a(href="#!") Blog
+          //- .flex-1.right
+          //-   a.button(href="#!") Contact Us
 
     main.index
       section.index-hero
@@ -58,15 +58,16 @@ html(lang="en")
             .flex-1.right
               img(src="assets/img/tsteps-hero.png", alt="talent engagement ecosystem")
 
-      section.index-vision.center
+      section.index-story.center
         .container
-          h2 Our Vision
-          p We aim to bridge the gap between recruiters and job-seekers by providing recruitment and skill-building and showcasing solutions. We are building a community where job-seekers can hone their skills, share their skills, profiles and recruiters can find them conveniently.
+          h2 Our Story
+          p There are a lot of tools available to a professional these days. But most of them are dis-engaged. Helping with only certain parts of their professional career. Some help you find a job but don't tell you how to go about it. Others offer learning services but are completely disjoint with market needs.
+          p We see this gap and wonder - can this not be done better. Is there no way to bring all the pieces of the talent ecosystem together and give our professionals a single platform for all their career needs.
+          p This is how t_steps - the talent engagement ecosystem was born.
 
       section.index-edge.center
         .container
-          h2 Our Edge
-          p.index-edge--description Each solution we provide gives you a competitive advantage. We bring to you the perfect combination of experience of the past and the technology of the future.
+          p.index-edge--description With t_steps we bring to you:
           .row
             .flex-1
               img(src="assets/img/futurist-technology.png", alt="futurist technology")
@@ -86,12 +87,12 @@ html(lang="en")
             .flex-1
               img.index-products--logo(src="assets/img/tscout-logo.svg", alt="t_scout logo")
               p A new-age, AI-driven Application Tracking System built for modern recruiters. This holistic recruitment management platform aids recruiters in managing job posts for clients as well as managing candidate in-flow.
-              a.button(href="#!", style="background-color: #26b1fc; border-color: #26b1fc;") Explore TScout
+              a.button(href="http://tscout.co", target="_blank", rel="noopener noreferrer", style="background-color: #26b1fc; border-color: #26b1fc;") Explore TScout
           .row.align-items-center.index-products--reverse
             .flex-1
               img.index-products--logo(src="assets/img/tspring-logo.svg", alt="t_spring logo")
               p An advanced resume sharing and parsing platform for progressive professionals. This social applicant profiling platform aids job seekers in building their online resumes and constantly updating it.
-              a.button(href="#!", style="background-color: #2fcc70; border-color: #2fcc70;") Explore TSpring
+              a.button(href="http://tspring.co", target="_blank", rel="noopener noreferrer", style="background-color: #2fcc70; border-color: #2fcc70;") Explore TSpring
             .flex-1.right
               img.index-products--img(src="assets/img/sharing-parsing-platform.jpg", alt="sharing parsing platform", style="object-position: right;")
           .row.align-items-center
@@ -100,7 +101,7 @@ html(lang="en")
             .flex-1
               img.index-products--logo(src="assets/img/televate-logo.svg", alt="t_elevate logo")
               p A personalised e-learning platform for career-driven professionals. This adaptive skill-advancement platform provides learning models based on learner’s existing skills and career goals.
-              a.button(href="#!", style="background-color: #f34747; border-color: #f34747;") Explore TElevate
+              a.button(href="http://televate.co", target="_blank", rel="noopener noreferrer", style="background-color: #f34747; border-color: #f34747;") Explore TElevate
 
     footer.footer
       .container
@@ -142,11 +143,14 @@ html(lang="en")
                     a(href="https://www.linkedin.com/company/talentsteps/", target="_blank", rel="noopener noreferrer")
                       img(src="assets/img/linkedin-white.svg", alt="linkedin")
                   li
-                    a(href="#!", target="_blank", rel="noopener noreferrer")
+                    a(href="https://twitter.com/talentsteps", target="_blank", rel="noopener noreferrer")
                       img(src="assets/img/twitter-white.svg", alt="twitter")
                   li
                     a(href="https://www.facebook.com/talentsteps/", target="_blank", rel="noopener noreferrer")
                       img(src="assets/img/facebook-white.svg", alt="facebook")
+                  li
+                    a(href="https://www.xing.com/companies/talentstepsgmbh%26co.kg", target="_blank", rel="noopener noreferrer")
+                      img(src="assets/img/xing.svg", alt="xing")
 
     script.
       var navMenu = document.getElementsByClassName('nav-menu')[0];

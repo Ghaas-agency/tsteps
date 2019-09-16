@@ -1,0 +1,18 @@
+mixin nav(pathPrefix)
+  nav.nav
+    .container
+      .row.align-items-center
+        //- .flex-1
+        //-   button.button-unstyled(type="button", onclick="toggleMobileMenu();")
+        //-     img.nav-toggle-icon(src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/md-menu.svg", alt="menu icon")
+        .flex-1
+          a(href=pathPrefix)
+            img.nav-logo(src=`${pathPrefix}assets/img/tsteps-logo.svg`, alt="t_steps logo")
+        //- .flex-1.right
+        //-   ul.nav-menu
+        //-     li
+        //-       a(href="#!") About Us
+        //-     li
+        //-       a(href="#!") Blog
+        //- .flex-1.right
+        //-   a.button(href="#!") Contact Us

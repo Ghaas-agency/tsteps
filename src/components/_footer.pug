@@ -1,0 +1,54 @@
+mixin footer(pathPrefix)
+  footer.footer(style="padding: 10px 0 40px 0")
+    .container
+      .row.footer-rows.align-items-center
+        .flex-1(style="padding-top: 30px;")
+          a(href=`${pathPrefix}privacy-policy/`, style="margin-right: 10px; border-right: 1px solid #ffffff; padding-right: 10px;") Privacy Policy
+          a(href=`${pathPrefix}imprint/`) Imprint
+        .flex-1.right
+          ul.footer-social
+            li
+              a(href="https://www.linkedin.com/company/talentsteps/", target="_blank", rel="noopener noreferrer")
+                img(src=`${pathPrefix}assets/img/linkedin-white.svg`, alt="linkedin")
+            li
+              a(href="https://twitter.com/talentsteps", target="_blank", rel="noopener noreferrer")
+                img(src=`${pathPrefix}assets/img/twitter-white.svg`, alt="twitter")
+            li
+              a(href="https://www.facebook.com/talentsteps/", target="_blank", rel="noopener noreferrer")
+                img(src=`${pathPrefix}assets/img/facebook-white.svg`, alt="facebook")
+            li
+              a(href="https://www.xing.com/companies/talentstepsgmbh%26co.kg", target="_blank", rel="noopener noreferrer")
+                img(src=`${pathPrefix}assets/img/xing.svg`, alt="xing")
+        //- .flex-1
+        //-   div
+        //-     img(src="assets/img/tscout-logo-white.svg", alt="t_scout logo")
+        //-     p TScout offer career paths, courses and counselling to elevate their career.
+        //-   div
+        //-     img(src="assets/img/televate-logo-white.svg", alt="t_elevate logo")
+        //-     p TElevate offer career paths, courses and counselling to elevate their career.
+        //-   div
+        //-     img(src="assets/img/tspring-logo-white.svg", alt="t_spring logo")
+        //-     p TSpring is a platform which offers CV creation, job search and events using Machine Learning and smart suggestions.
+        //- .flex-1
+        //-   .row
+        //-     .flex-1
+        //-       p.bold TalentShape
+        //-       ul.footer-menu
+        //-         li
+        //-           a(href="#!") About
+        //-         li
+        //-           a(href="#!") Features
+        //-         li
+        //-           a(href="#!") Products
+        //-     .flex-1
+        //-       p.bold TalentScout
+        //-       ul.footer-menu
+        //-         li
+        //-           a(href="#!") About
+        //-         li
+        //-           a(href="#!") Features
+        //-         li
+        //-           a(href="#!") Get a Demo
+        //-     .flex-1
+        //-       p.bold Follow
+      

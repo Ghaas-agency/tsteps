@@ -1,0 +1,24 @@
+include ../components/_index.pug
+<!DOCTYPE html>
+html(lang="en")
+  head
+    +headMeta(
+      'Thank You | T_Steps',
+      'We provide AI-Driven, Machine Learning Tools For Talent Discovery and Professional Growth for visionary professionals.',
+      '../'
+    )
+    +headScripts('../')
+
+  body
+    nav.nav
+      .container
+        .row.align-items-center.center
+          .flex-1
+            a(href="../")
+              img.nav-logo(src="../assets/img/tsteps-logo.svg", alt="t_steps logo")
+
+    main.ty.center.row.align-items-center
+      .container.flex-1
+        img(src="../assets/img/email-sent.svg", alt="email sent")
+        h2 Thank you for showing your interest.
+        p You'd be the first to know about our launch. Stay tuned!

@@ -1,52 +1,15 @@
+include components/_index.pug
 <!DOCTYPE html>
 html(lang="en")
   head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(http-equiv='X-UA-Compatible', content='ie=edge')
-    title T_Steps | The Talent Engagement Ecosystem
-    link(href='https://fonts.googleapis.com/css?family=Roboto:400,400i,700,900&display=swap', rel='stylesheet')
-    link(rel='stylesheet', href='assets/css/style.css')
-    link(rel='icon', type='image/png', href='assets/img/favicon.png')
-    // Search Engine
-    meta(name='description', content='We provide AI-Driven, Machine Learning Tools For Talent Discovery and Professional Growth for visionary professionals.')
-    meta(name='image', content='assets/img/tsteps-meta.jpg')
-    // Schema.org for Google
-    meta(itemprop='name', content="T_Steps | The Talent Engagement Ecosystem")
-    meta(itemprop='description', content='We provide AI-Driven, Machine Learning Tools For Talent Discovery and Professional Growth for visionary professionals.')
-    meta(itemprop='image', content='assets/img/tsteps-meta.jpg')
-    // Twitter
-    meta(name='twitter:card', content='summary')
-    meta(name='twitter:title', content="T_Steps | The Talent Engagement Ecosystem")
-    meta(name='twitter:description', content='We provide AI-Driven, Machine Learning Tools For Talent Discovery and Professional Growth for visionary professionals.')
-    //- meta(name='twitter:site', content='@dist_sys')
-    //- meta(name='twitter:creator', content='@dist_sys')
-    meta(name='twitter:image:src', content='assets/img/tsteps-meta.jpg')
-    // Open Graph general (Facebook, Pinterest & Google+)
-    //- meta(name='url', property='og:url', content='https://dsconf.in')
-    meta(name='site_name', property='og:site_name', content='T_Steps')
-    meta(name='title', property='og:title', content="T_Steps | The Talent Engagement Ecosystem")
-    meta(name='type', property='og:type', content='website')
-    meta(name='image', property='og:image', content='assets/img/tsteps-meta.jpg')
-    meta(name='description', property='og:description', content='We provide AI-Driven, Machine Learning Tools For Talent Discovery and Professional Growth for visionary professionals.')
+    +headMeta(
+      'T_Steps | The Talent Engagement Ecosystem',
+      'We provide AI-Driven, Machine Learning Tools For Talent Discovery and Professional Growth for visionary professionals.',
+      ''
+    )
+    +headScripts('')
   body
-    nav.nav
-      .container
-        .row.align-items-center
-          //- .flex-1
-          //-   button.button-unstyled(type="button", onclick="toggleMobileMenu();")
-          //-     img.nav-toggle-icon(src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/collection/build/ionicons/svg/md-menu.svg", alt="menu icon")
-          .flex-1
-            a(href="./")
-              img.nav-logo(src="assets/img/tsteps-logo.svg", alt="t_steps logo")
-          //- .flex-1.right
-          //-   ul.nav-menu
-          //-     li
-          //-       a(href="#!") About Us
-          //-     li
-          //-       a(href="#!") Blog
-          //- .flex-1.right
-          //-   a.button(href="#!") Contact Us
+    +nav('')
 
     main.index
       section.index-hero
@@ -103,54 +66,7 @@ html(lang="en")
               p A personalised e-learning platform for career-driven professionals. This adaptive skill-advancement platform provides learning models based on learner’s existing skills and career goals.
               a.button(href="http://televate.co", target="_blank", rel="noopener noreferrer", style="background-color: #f34747; border-color: #f34747;") Explore TElevate
 
-    footer.footer.center(style="padding: 10px 0 40px 0")
-      .container
-        //- .row.footer-rows
-          //- .flex-1
-          //-   div
-          //-     img(src="assets/img/tscout-logo-white.svg", alt="t_scout logo")
-          //-     p TScout offer career paths, courses and counselling to elevate their career.
-          //-   div
-          //-     img(src="assets/img/televate-logo-white.svg", alt="t_elevate logo")
-          //-     p TElevate offer career paths, courses and counselling to elevate their career.
-          //-   div
-          //-     img(src="assets/img/tspring-logo-white.svg", alt="t_spring logo")
-          //-     p TSpring is a platform which offers CV creation, job search and events using Machine Learning and smart suggestions.
-          //- .flex-1
-          //-   .row
-          //-     .flex-1
-          //-       p.bold TalentShape
-          //-       ul.footer-menu
-          //-         li
-          //-           a(href="#!") About
-          //-         li
-          //-           a(href="#!") Features
-          //-         li
-          //-           a(href="#!") Products
-          //-     .flex-1
-          //-       p.bold TalentScout
-          //-       ul.footer-menu
-          //-         li
-          //-           a(href="#!") About
-          //-         li
-          //-           a(href="#!") Features
-          //-         li
-          //-           a(href="#!") Get a Demo
-          //-     .flex-1
-          //-       p.bold Follow
-        ul.footer-social
-          li
-            a(href="https://www.linkedin.com/company/talentsteps/", target="_blank", rel="noopener noreferrer")
-              img(src="assets/img/linkedin-white.svg", alt="linkedin")
-          li
-            a(href="https://twitter.com/talentsteps", target="_blank", rel="noopener noreferrer")
-              img(src="assets/img/twitter-white.svg", alt="twitter")
-          li
-            a(href="https://www.facebook.com/talentsteps/", target="_blank", rel="noopener noreferrer")
-              img(src="assets/img/facebook-white.svg", alt="facebook")
-          li
-            a(href="https://www.xing.com/companies/talentstepsgmbh%26co.kg", target="_blank", rel="noopener noreferrer")
-              img(src="assets/img/xing.svg", alt="xing")
+    +footer('')
 
     script.
       var navMenu = document.getElementsByClassName('nav-menu')[0];

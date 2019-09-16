@@ -1,0 +1,27 @@
+mixin headMeta(title, description, pathPrefix)
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible', content='ie=edge')
+  title=title
+  link(rel='icon', type='image/png', href=`${pathPrefix}assets/img/favicon.png`)
+  // Search Engine
+  meta(name='description', content=description)
+  meta(name='image', content=`${pathPrefix}assets/img/tsteps-meta.jpg`)
+  // Schema.org for Google
+  meta(itemprop='name', content="T_Steps | The Talent Engagement Ecosystem")
+  meta(itemprop='description', content=description)
+  meta(itemprop='image', content=`${pathPrefix}assets/img/tsteps-meta.jpg`)
+  // Twitter
+  meta(name='twitter:card', content='summary')
+  meta(name='twitter:title', content="T_Steps | The Talent Engagement Ecosystem")
+  meta(name='twitter:description', content=description)
+  //- meta(name='twitter:site', content='@dist_sys')
+  //- meta(name='twitter:creator', content='@dist_sys')
+  meta(name='twitter:image:src', content=`${pathPrefix}assets/img/tsteps-meta.jpg`)
+  // Open Graph general (Facebook, Pinterest & Google+)
+  //- meta(name='url', property='og:url', content='https://dsconf.in')
+  meta(name='site_name', property='og:site_name', content='T_Steps')
+  meta(name='title', property='og:title', content="T_Steps | The Talent Engagement Ecosystem")
+  meta(name='type', property='og:type', content='website')
+  meta(name='image', property='og:image', content=`${pathPrefix}assets/img/tsteps-meta.jpg`)
+  meta(name='description', property='og:description', content=description)

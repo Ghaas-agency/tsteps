@@ -1,0 +1,19 @@
+.ty {
+  height: calc(100vh - 100px);
+  background-color: $light;
+  padding-top: 10px;
+  padding-bottom: 80px;
+
+  .container {
+    max-width: 480px;
+  }
+
+  h2 {
+    margin-bottom: 25px;
+  }
+
+  img {
+    max-width: 80px;
+    margin-bottom: 30px;
+  }
+}

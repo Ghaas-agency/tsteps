@@ -13,58 +13,84 @@ html(lang="en")
 
     main.index
       section.index-hero
+        img.index-hero--bg(src="assets/img/hero-bg.png", alt="talent engagement ecosystem")
         .container
-          .row.align-items-center
-            .flex-1
-              h1 The Talent Engagement Ecosystem
-              p We help in building, showcasing and finding talent.
-            .flex-1.right
-              img(src="assets/img/tsteps-hero.png", alt="talent engagement ecosystem")
+          h1 The Talent Engagement Ecosystem
+          p We help in building, showcasing and finding talent.
 
       section.index-story.center
+        img.index-story--bg(src="assets/img/story-bg-1.png", alt="t steps story")
+        img.index-story--cloud.cloud-1(src="assets/img/cloud.png", alt="cloud")
+        img.index-story--cloud.cloud-2(src="assets/img/cloud.png", alt="cloud")
+        img.index-story--cloud.cloud-3(src="assets/img/cloud.png", alt="cloud")
+        img.index-story--cloud.cloud-4(src="assets/img/cloud.png", alt="cloud")
+        img.index-story--cloud.cloud-5(src="assets/img/cloud.png", alt="cloud")
         .container
-          h2 Our Story
+          h2.white Our Story
           p There are a lot of tools available to a professional these days. But most of them are dis-engaged. Helping with only certain parts of their professional career. Some help you find a job but don't tell you how to go about it. Others offer learning services but are completely disjoint with market needs.
           p We see this gap and wonder - can this not be done better. Is there no way to bring all the pieces of the talent ecosystem together and give our professionals a single platform for all their career needs.
           p This is how t_steps - the talent engagement ecosystem was born.
-
-      section.index-edge.center
-        .container
-          p.index-edge--description With t_steps, we bring to you:
+          p.index-story--description With t_steps, we bring to you:
           .row
             .flex-1
-              img(src="assets/img/futurist-technology.png", alt="futurist technology")
-              h3 The Futurist Technology
+              h3.white The Futurist Technology
               p We go beyond Al, analytics, big data, predictive technology and hybrid search. We have incorporated futuristic technology like blockchain and other innovative &amp; disruptive technologies to create a transparent, ethical and dynamic talent discovery landscape.
             .flex-1
-              img(src="assets/img/past-experience.png", alt="past experience")
-              h3 The Past Experience
+              h3.white The Past Experience
               p We apply 20+ years of hardcore Staffing &amp; Hiring experience to shape the technology to the needs of the industry. While deep-diving into the technology of the future, we use practical learning from our past experience to make our solutions more convenient for the job-seekers as well as recruiters.
 
-      section.index-products
-        .container
-          h2.center Our Products
-          .row.align-items-center
-            .flex-1
-              img.index-products--img(src="assets/img/ai-application-tracking.jpg", alt="ai application tracking")
-            .flex-1
-              img.index-products--logo(src="assets/img/tscout-logo.svg", alt="t_scout logo")
-              p A new-age, AI-driven Application Tracking System built for modern recruiters. This holistic recruitment management platform aids recruiters in managing job posts for clients as well as managing candidate in-flow.
-              a.button(href="http://tscout.co", target="_blank", rel="noopener noreferrer", style="background-color: #26b1fc; border-color: #26b1fc;") Explore TScout
-          .row.align-items-center.index-products--reverse
-            .flex-1
-              img.index-products--logo(src="assets/img/tspring-logo.svg", alt="t_spring logo")
-              p An advanced resume sharing and parsing platform for progressive professionals. This social applicant profiling platform aids job seekers in building their online resumes and constantly updating it.
-              a.button(href="http://tspring.co", target="_blank", rel="noopener noreferrer", style="background-color: #2fcc70; border-color: #2fcc70;") Explore TSpring
-            .flex-1.right
-              img.index-products--img(src="assets/img/sharing-parsing-platform.jpg", alt="sharing parsing platform", style="object-position: right;")
-          .row.align-items-center
-            .flex-1
-              img.index-products--img(src="assets/img/e-learning-platform.jpg", alt="e-learning platform", style="object-position: top;")
-            .flex-1
-              img.index-products--logo(src="assets/img/televate-logo.svg", alt="t_elevate logo")
-              p A personalised e-learning platform for career-driven professionals. This adaptive skill-advancement platform provides learning models based on learner’s existing skills and career goals.
-              a.button(href="http://televate.co", target="_blank", rel="noopener noreferrer", style="background-color: #f34747; border-color: #f34747;") Explore TElevate
+      section.index-products.center
+        .index-products__heading
+          .container
+            h2.white Our Products
+        .index-products__content.product-1
+          .container
+            .row.align-items-center
+              .flex-1
+                img.index-products--img(src="assets/img/tscout-illustration.png", alt="ai application tracking")
+              .flex-2
+                img.index-products--logo(src="assets/img/tscout-logo-white.svg", alt="t_scout logo")
+                p An Umbrella Recruitment Management Platform
+                .row.features-row
+                  .flex-1
+                    img(src="assets/img/single-flow-candidate-management.png", alt="single flow candidate management")
+                  .flex-1
+                    img(src="assets/img/data-driven-recruitment-insights.png", alt="data-driven recruitment insights")
+                  .flex-1
+                    img(src="assets/img/integration-with-popular-hiring-platforms.png", alt="integration with popular hiring platforms")
+                a.button(href="https://tscout.co", target="_blank", rel="noopener noreferrer") Explore TScout
+        .index-products__content.product-2
+          .container
+            .row.align-items-center
+              .flex-2
+                img.index-products--logo(src="assets/img/tspring-logo-white.svg", alt="t_spring logo")
+                p A Holistic Career Building Platform
+                .row.features-row
+                  .flex-1
+                    img(src="assets/img/ai-driven-resume-building.png", alt="ai driven resume building")
+                  .flex-1
+                    img(src="assets/img/reward-driven-referral-system.png", alt="reward driven referral system")
+                  .flex-1
+                    img(src="assets/img/access-to-career-growth-opportunities.png", alt="access to career growth opportunities")
+                a.button(href="https://tspring.co", target="_blank", rel="noopener noreferrer") Explore TSpring
+              .flex-1.right
+                img.index-products--img(src="assets/img/tspring-illustration.png", alt="sharing parsing platform")
+        .index-products__content.product-3
+          .container
+            .row.align-items-center
+              .flex-1
+                img.index-products--img(src="assets/img/televate-illustration.png", alt="e-learning platform")
+              .flex-2
+                img.index-products--logo(src="assets/img/televate-logo-white.svg", alt="t_elevate logo")
+                p An Adaptive E-Learning Platform
+                .row.features-row
+                  .flex-1
+                    img(src="assets/img/adaptive-e-learning-modules-courses.png", alt="adaptive e-learning modules courses")
+                  .flex-1
+                    img(src="assets/img/upskilling-pathways.png", alt="upskilling pathways")
+                  .flex-1
+                    img(src="assets/img/interactive-media.png", alt="interactive media")
+                a.button(href="https://televate.co", target="_blank", rel="noopener noreferrer") Explore TElevate
 
     +footer('')
 
